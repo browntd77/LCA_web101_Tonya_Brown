@@ -1,0 +1,48 @@
+h1{
+    color: black;
+    width: 60%;
+    margin: 5% auto;
+    text-align: center;
+    font-size: 5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-image: url(./background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+main{
+    width: 60%;
+    margin: 5% auto;
+
+}
+
+article{
+    margin: 1% auto;
+    width: 60%;
+    border: 2px solid gray;
+    background: #20B2AA;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white
+}
+article > h3{
+    font-size: 1em;
+}
+
+article:hover{
+    background: white;
+    color: black;
+}
+
+article:hover > p:first-letter{
+    color: green;
+    font-family: cursive;
+    font-size: 3em;
+}
+
+article:hover > h3{
+    background: black;
+    color: white;
+}
