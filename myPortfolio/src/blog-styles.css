@@ -1,10 +1,11 @@
 h1{
-    color: black;
+    color: white;
     width: 60%;
     margin: 5% auto;
     text-align: center;
     font-size: 5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px 5px gray;
 }
 
 body{
