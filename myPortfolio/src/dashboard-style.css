@@ -1,0 +1,28 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+   }
+   .wrapper {
+    min-height: 100vh;
+   }
+   h1 { 
+    background-color: #333;
+    color: white;
+    margin: 0;
+    padding: 1rem;
+    font-size: 4rem;
+   }
+   button {
+    font-size: 2rem;
+    border: 1px solid #333;
+   }
+   .modifiers button {
+    background-color: #ccc;
+   }
+   .operations button {
+    background-color: orange;
+   }
+   .digits button {
+    background-color: #efefef;
+   }
