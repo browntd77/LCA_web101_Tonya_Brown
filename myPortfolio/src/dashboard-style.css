@@ -1,18 +1,81 @@
 /* Grid */
-body {
-    display: grid;
-  }
-
-  body {
+   body {
     display: grid;
     grid-template-columns: 33.33% 33.33%; 33.33%;
     grid-template-rows: 25% 25% 25% 25%;
+  } 
+
+  body{
+    background: black;
   }
 
 
+/* Flexbox Calculator */
+*{
+  box-sizing: border-box;
+}
+ /* body{
+  min-height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+}  */
+.container{
+  display:flex;
+  flex-wrap: wrap;
+  flex: 0 1 60%;
+  min-height: 100hvh;
+  min-width:400px;
+  justify-content: center;
+  align-items: flex-start;
+  grid-column: 3/4;
+  grid-row: 1/5;
+}
 
-/* Calculator */
-html {
+.buttons,.result{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 100%;
+}
+.result{
+  height: 50px;
+  border: 1px solid black;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.5em;
+  background: #000;
+  color:#fff;
+  padding:0 10px;
+}
+.button{
+  display:flex;
+  flex: 0 1 25%;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border: 1px solid black;
+  border-top:none;
+  border-left:none;
+  cursor: pointer;
+  background: -webkit-linear-gradient(top,#d2d2d2,#ddd);
+  font-size:2em;
+}
+.button:nth-child(4n+1){
+  border-left: 1px solid black;
+}
+.button:nth-child(4n),.button:last-child{
+  background: #f98110;
+  color: #fff;
+}
+.zero-btn{
+  flex-grow: 2;
+}
+.doubleBordered{
+  border: 2px solid black;
+}
+
+/* Grid Calculator */
+ /* html {
     font-size: 62.5%;
     box-sizing: border-box;
   }
@@ -23,7 +86,7 @@ html {
     box-sizing: inherit;
   }
 
-  .calculator {
+  /* .calculator {
     border: 1px solid #ccc;
     border-radius: 5px;
     grid-column: 3/4;
@@ -33,9 +96,9 @@ html {
     left: 75%;
     transform: translate(-10%, -100%); */
     width: 400px;
-  }
+  } */
 
-  .calculator-screen {
+  /* .calculator-screen {
     width: 100%;
     font-size: 5rem;
     height: 80px;
@@ -45,9 +108,9 @@ html {
     text-align: right;
     padding-right: 20px;
     padding-left: 10px;
-  }
+  } */
 
-  button {
+  /* button {
     height: 60px;
     background-color: #fff;
     border-radius: 3px;
@@ -58,9 +121,9 @@ html {
     background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.04));
     box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.45), inset 0 -1px 0 0 rgba(255,255,255,.15), 0 1px 0 0 rgba(255,255,255,.15);
     text-shadow: 0 1px rgba(255,255,255,.4);
-  }
+  } */
   
-  button:hover {
+  /* button:hover {
     background-color: #eaeaea;
   }
   
@@ -72,9 +135,9 @@ html {
     background-color: #f0595f;
     border-color: #b0353a;
     color: #fff;
-  }
+  } */
   
-  .all-clear:hover {
+  /* .all-clear:hover {
     background-color: #f17377;
   }
   
@@ -95,9 +158,9 @@ html {
   .calculator-keys {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
+  } */
 
-  .calculator-keys {
+  /* .calculator-keys {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
@@ -121,9 +184,9 @@ html {
     border-color: #337cac;
     color: #fff;
     grid-row-start: 2;
-  }
+  } */
 
-  .equal-sign {
+  /* .equal-sign {
     background-color: #2e86c0;
     border-color: #337cac;
     color: #fff;
@@ -150,15 +213,15 @@ html {
     height: 100%;
     grid-row: 2 / 6;
     grid-column: 4 / 5;
-  }
+  } */
 
-  .equal-sign {
+  /* .equal-sign {
     background-color: #2e86c0;
     border-color: #337cac;
     color: #fff;
     height: 100%;
     grid-area: 2 / 4 / 6 / 5;
-  }
+  } */
 
 /* Clock and Calendar */
 body
