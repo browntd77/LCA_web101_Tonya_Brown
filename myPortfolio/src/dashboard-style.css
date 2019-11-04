@@ -1,28 +1,329 @@
-html, body {
+/* Grid */
+body {
+    display: grid;
+  }
+
+  body {
+    display: grid;
+    grid-template-columns: 33.33% 33.33%; 33.33%;
+    grid-template-rows: 25% 25% 25% 25%;
+  }
+
+
+
+/* Calculator */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-   }
-   .wrapper {
-    min-height: 100vh;
-   }
-   h1 { 
-    background-color: #333;
-    color: white;
-    margin: 0;
-    padding: 1rem;
-    font-size: 4rem;
-   }
-   button {
+    box-sizing: inherit;
+  }
+
+  .calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    grid-column: 3/4;
+    grid-row: 1/5;
+    /* position: absolute; */
+    /* top: 75%;
+    left: 75%;
+    transform: translate(-10%, -100%); */
+    width: 400px;
+  }
+
+  .calculator-screen {
+    width: 100%;
+    font-size: 5rem;
+    height: 80px;
+    border: none;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 10px;
+  }
+
+  button {
+    height: 60px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    background-color: transparent;
     font-size: 2rem;
-    border: 1px solid #333;
-   }
-   .modifiers button {
-    background-color: #ccc;
-   }
-   .operations button {
-    background-color: orange;
-   }
-   .digits button {
-    background-color: #efefef;
-   }
+    color: #333;
+    background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.04));
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.45), inset 0 -1px 0 0 rgba(255,255,255,.15), 0 1px 0 0 rgba(255,255,255,.15);
+    text-shadow: 0 1px rgba(255,255,255,.4);
+  }
+  
+  button:hover {
+    background-color: #eaeaea;
+  }
+  
+  .operator {
+    color: #337cac;
+  }
+  
+  .all-clear {
+    background-color: #f0595f;
+    border-color: #b0353a;
+    color: #fff;
+  }
+  
+  .all-clear:hover {
+    background-color: #f17377;
+  }
+  
+  .equal-sign {
+    background-color: #2e86c0;
+    border-color: #337cac;
+    color: #fff;
+  }
+  
+  .equal-sign:hover {
+    background-color: #4e9ed4;
+  }
+
+  .calculator-keys {
+    display: grid;
+  }
+
+  .calculator-keys {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+  }
+
+  .calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+  }
+
+  .equal-sign {
+    background-color: #2e86c0;
+    border-color: #337cac;
+    color: #fff;
+    grid-row-start: 2;
+  }
+
+  .equal-sign {
+    background-color: #2e86c0;
+    border-color: #337cac;
+    color: #fff;
+    height: 100%;
+    grid-row-start: 2;
+    grid-row-end: 6;
+  }
+
+  .equal-sign {
+    background-color: #2e86c0;
+    border-color: #337cac;
+    color: #fff;
+    height: 100%;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+
+  .equal-sign {
+    background-color: #2e86c0;
+    border-color: #337cac;
+    color: #fff;
+    height: 100%;
+    grid-row: 2 / 6;
+    grid-column: 4 / 5;
+  }
+
+  .equal-sign {
+    background-color: #2e86c0;
+    border-color: #337cac;
+    color: #fff;
+    height: 100%;
+    grid-area: 2 / 4 / 6 / 5;
+  }
+
+/* Clock and Calendar */
+body
+{
+	background-color:#1C1C1C;
+	text-align:center;
+	font-family:helvetica;
+}
+h1
+{
+	margin:0px;
+	margin-top:40px;
+	color:#8181F7;
+	font-size:45px;
+}
+#date
+{
+	margin-top:20px;
+	color:silver;
+	font-size:40px;
+	border: 2px dashed #2E9AFE;
+	padding: 20px;
+    width:400px;
+    height: 100px;
+    margin-left:100px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+} 
+#time
+{
+	margin-top:20px;
+	font-size:40px;
+	color:silver;
+	border:2px dashed #2E9AFE;
+	padding:20px;
+    width:400px;
+    height: 100px;
+    margin-left:100px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+/* To Do List */
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Remove margins and padding from the list */
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    /* position: relative; */
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    /* transition: 0.2s; */
+    grid-column: 2/3;
+    grid-row: 3/5;
+
+     
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: #ddd;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    /* position: absolute; */
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    /* transform: rotate(45deg); */
+    height: 15px;
+    width: 7px;
+  }
+  
+  /* Style the close button */
+  .close {
+    /* position: absolute; */
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #f44336;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+    grid-column: 2/3;
+    grid-row: 3/5;
+  }
+  
+  /* Style the input */
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    grid-column: 2/3;
+    grid-row: 3/5;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    /* transition: 0.3s; */
+    border-radius: 0;
+    grid-column: 2/3;
+    grid-row: 3/5;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+    grid-column: 2/3;
+    grid-row: 3/5;
+  }
