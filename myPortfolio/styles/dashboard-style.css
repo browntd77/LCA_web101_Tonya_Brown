@@ -1,25 +1,72 @@
 /* Grid */
-   body {
+   /* body {
     display: grid;
-    grid-template-columns: 33.33% 33.33%; 33.33%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 25% 25% 25% 25%;
-  } 
+  }  */
 
   body{
-    background: black;
+    background-image: url(../img/background.jpg);
+  }
+  body{
+    margin: 0;
+    padding: 0;
   }
 
+  .wrapper {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr 3fr;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+  }
+
+  .name {
+    grid-column: 1/3;
+    grid-row: 1;
+    text-align: center;
+  }
+
+  .date{
+    grid-column: 1/3;
+    grid-row: 2;
+    text-align: center;
+  }
+
+  .time{
+    grid-column: 1/3;
+    grid-row: 3;
+    text-align: center;
+  }
+
+  .do{
+    grid-column: 1/3;
+    grid-row: 4/6;
+  }
+
+  .container{
+    grid-column: 4/5;
+    grid-row: 4/5;
+  }
+
+  .greeting{
+    grid-column: 3/5;
+    grid-row: 1/2;
+    color: red;
+    text-shadow: 2px 2px 2px gray;
+    font: bold;
+    font-family:helvetica;
+    font-size: 45px;
+  }
 
 /* Flexbox Calculator */
 *{
   box-sizing: border-box;
 }
- /* body{
+ body{
   min-height: 100vh;
   display:flex;
   justify-content: center;
   align-items: flex-start;
-}  */
+}
 .container{
   display:flex;
   flex-wrap: wrap;
@@ -28,8 +75,6 @@
   min-width:400px;
   justify-content: center;
   align-items: flex-start;
-  grid-column: 3/4;
-  grid-row: 1/5;
 }
 
 .buttons,.result{
@@ -95,7 +140,7 @@
     /* top: 75%;
     left: 75%;
     transform: translate(-10%, -100%); */
-    width: 400px;
+    /* width: 400px;
   } */
 
   /* .calculator-screen {
@@ -234,34 +279,33 @@ h1
 {
 	margin:0px;
 	margin-top:40px;
-	color:#8181F7;
-	font-size:45px;
+  color: palegreen;
+  text-shadow: 5px 5px 5px gray;
+	font-size:60px;
 }
 #date
 {
 	margin-top:20px;
-	color:silver;
+  color:silver;
+  text-shadow: 2px 2px 2px honeydew;
 	font-size:40px;
-	border: 2px dashed #2E9AFE;
+	border: 2px;
 	padding: 20px;
-    width:400px;
-    height: 100px;
-    margin-left:100px;
-    grid-column: 1/2;
-    grid-row: 2/3;
+  width:400px;
+  height: 100px;
+  margin-left:100px;
 } 
 #time
 {
 	margin-top:20px;
 	font-size:40px;
-	color:silver;
-	border:2px dashed #2E9AFE;
+  color:silver;
+  text-shadow: 2px 2px 2px honeydew;
+	border:2px;
 	padding:20px;
     width:400px;
     height: 100px;
     margin-left:100px;
-    grid-column: 1/2;
-    grid-row: 3/4;
 }
 
 /* To Do List */
@@ -284,8 +328,6 @@ h1
     background: #eee;
     font-size: 18px;
     /* transition: 0.2s; */
-    grid-column: 2/3;
-    grid-row: 3/5;
 
      
     /* make the list items unselectable */
@@ -335,13 +377,13 @@ h1
   }
   
   .close:hover {
-    background-color: #f44336;
+    background-color: palegreen;
     color: white;
   }
   
   /* Style the header */
   .header {
-    background-color: #f44336;
+    background-color: palegreen;
     padding: 30px 40px;
     color: white;
     text-align: center;
@@ -352,8 +394,6 @@ h1
     content: "";
     display: table;
     clear: both;
-    grid-column: 2/3;
-    grid-row: 3/5;
   }
   
   /* Style the input */
@@ -365,8 +405,6 @@ h1
     padding: 10px;
     float: left;
     font-size: 16px;
-    grid-column: 2/3;
-    grid-row: 3/5;
   }
   
   /* Style the "Add" button */
@@ -381,12 +419,8 @@ h1
     cursor: pointer;
     /* transition: 0.3s; */
     border-radius: 0;
-    grid-column: 2/3;
-    grid-row: 3/5;
   }
   
   .addBtn:hover {
     background-color: #bbb;
-    grid-column: 2/3;
-    grid-row: 3/5;
   }
