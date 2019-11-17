@@ -35,20 +35,17 @@
         <title>Tonya's Dashboard</title>
 </head>
 <body>
-  <div class=wrapper>
-  <!-- Grid -->
-  <!-- .container (Calculator)
-    .name
-    .date
-    .time
-    .do
-    .greeting
-   -->
 
-   <!-- Greeting -->
-   <h1 class=greeting>Great things never come from comfort zones</h1>
+  <div class=grid-container>
+    <!-- Stuff to add -->
+    <div class="header"></div>
+    <div class="weather"></div>
+    <div class="footer"></div>
+   <!-- Greeting and Quote -->
+   <h1 class="greeting">Hello Tonya!</h1>
+   <h1 class="quote">Great things never come from comfort zones</h1>
 <!-- Flexbox Calculator -->
-<div class="container">
+    <div class="calculator">
     <div class="result">0</div>
     <div class="buttons">
         <span class="button resetBtn">AC</span>
@@ -110,7 +107,6 @@
                               </div> -->
 
 <!-- Clock and Calendar -->
-<h1 class="name">Hello Tonya!</h1>
    <div class="date">
     <p id="date"></p>
    </div>
@@ -120,14 +116,15 @@
    
 
 <!-- To Do List -->
-<div class="do">
+<div class="todo">
   <div id="myDIV" class="header">
                 <h2>My To Do List</h2>
                 <input type="text" id="myInput" placeholder="Title...">
                 <span onclick="newElement()" class="addBtn">Add</span>
               </div>
               
-              <ul id="myUL">
+              <ul id="myUL" style="list-style: none;">
+                <li>List item with no bullet</li>
                 <li>Code 6-10</li>
                 <li class="checked">Write blog</li>
                 <li>Study chapter 4</li>
@@ -135,7 +132,6 @@
                 <li>Organize notes</li>
               </ul>
             </div>
-
           </div>
 </body>
 </html>
