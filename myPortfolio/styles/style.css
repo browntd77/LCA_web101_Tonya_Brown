@@ -25,8 +25,18 @@ body {
     display: grid;
     grid-template-columns: 30% 40% 30%;
   }
-  
+
   nav > a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* nav > a {
     margin: 2% 1% 3%;
     height: 10%;
     width: 15%;
@@ -38,19 +48,31 @@ body {
     padding: 20px; 
     text-align: center;
     border: 2px solid black;
-  }
+  } */
   
-  .has-border {
+  /* .has-border {
     border-radius: 25px;
     border: 2px solid blueviolet;
     background: none;
     padding: 20px; 
-  }
+  } */
   
   nav {
     display: flex;
     justify-content: flex-end;
     width: 100%;
+    background-color: #333;
+    overflow: hidden;
+  }
+
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  nav a.active {
+    background-color: #4CAF50;
+    color: white;
   }
   
   #profile-pic {
