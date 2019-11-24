@@ -1,0 +1,57 @@
+box{
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+}
+
+.box1{
+    background-color: red;  
+}
+
+.box2{
+    background-color: red;
+}
+
+.box3{
+    background-color: red;
+}
+
+.box4{
+    background-color: red;
+}
+
+.five{
+    background-color: red;
+}
+
+.box6{
+    background-color: red;
+}
+
+.box7{
+    background-color: red;
+}
+
+.box8{
+    background-color: red;
+}
+
+.box9{
+    background-color: red;
+}
+
+.box10{
+    background-color: red;
+}
+
+.box11{
+    background-color: red;
+}
+
+.box12{
+    background-color: red;
+}
