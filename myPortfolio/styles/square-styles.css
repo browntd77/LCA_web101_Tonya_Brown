@@ -1,0 +1,63 @@
+.box{
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    position: relative;
+    top: 50%;
+    margin-left: 50%;
+    margin-right: -50%;
+}
+
+.one{
+    background-color: red;  
+}
+
+.two{
+    background-color: orange;
+}
+
+.three{
+    background-color: yellow;
+}
+
+.four{
+    background-color: green;
+}
+
+.five{
+    background-color: blue;
+}
+
+.six{
+    background-color: indigo;
+}
+
+.seven{
+    background-color: violet;
+}
+
+.eight{
+    background-color: orangered;
+}
+
+.nine{
+    background-color: greenyellow;
+}
+
+.ten{
+    background-color: cornflowerblue;
+}
+
+.eleven{
+    background-color: purple;
+}
+
+.twelve{
+    background-color: hotpink;
+}
+
+.box:hover.odd{
+    transform: translate(500px, 100px) rotate(360 deg) scale(2);
+}
+
+.box:hover.even
