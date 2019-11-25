@@ -3,33 +3,64 @@
     padding: 0;
     box-sizing: border-box;
   }
-body {
-    display: flex;
-    justify-content: center;
-}
 
-.nasa {
+  body{
+      width: 850px;
+      margin: 0 auto;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+main {
+    height: 450px;
     background-image: url(../img/nasa.jpg);
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 4em;
     color: white;
-    display:flex;
-    /* height: 450px; */
-    width: 850px;
-    justify-content: center;
-    padding: 10%;
-}
-main {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    padding: 150px;
 }
 
-.social {
-    display:flex;
-    flex: 0 1 25%;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.container{
+    display: flex;
     height: 324px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: gainsboro;
+    margin-top: 20px;
+}
+
+article {
     width: 270px;
-    padding: 10%;
+    height: 374px;
+    background-color: gainsboro;
+    flex-flow: column;
+    margin-left: 30px;
+    padding-top: 20px;
+    font-size: 1em;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+.name{
+    width: 230px;
+    height: auto;
+    font-size: 1em;
+}
+
+textarea{
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    font-size: 1em;
+    color: white;
+    background-color: black;
+}
+
+p{
+    padding-top: 5px;
 }

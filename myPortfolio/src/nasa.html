@@ -8,30 +8,37 @@
     <title>Nasa</title>
 </head>
 <body>
-    <section class="nasa"><h1>NASA</h1></section>
     <main>
-        <article class="social">
-            <h2>SOCIAL MEDIA</h2>
-            <p class="twitter">@nasa</p>
-            <a href="facebook-square-brands.svg" class="fab fa-facebook">fb.com/nasa</a>
-            <!-- <p class="facebook">fb.com/nasa</p> -->
-            <p class="instagram">@nasa</p>
-            <p class="youtube">youtube.com/NASA</p>
-        </article>
-        <article class="office">
-            <h2>OFFICE INFO</h2>
-            <p class="communications">Public Communications Office</p>
-            <p>NASA Headquarters</p>
-            <p>300 E. Street SW, Suite 5R30</p>
-            <p>Washington, DC 20546</p>
-            <p>(202) 358-0001 (Office)</p>
-            <p>(202) 358-4338 (Fax)</p>
-        </article>
-        <article class="form">
-            <h2>CONTACT US</h2>
-            <p>Name</p>
-            <p>Message</p>
-        </article>
+        <section class="nasa"><h1>NASA</h1></section>
     </main>
+        <section class=container>
+            <article class="social">
+                <h2>SOCIAL MEDIA</h2>
+                <p>Twitter - @nasa</p>
+                <p>Facebook - fb.com/nasa</p>
+                <p>Instagram - @nasa</p>
+                <p>Youtube - youtube.com/NASA</p>
+            </article>
+            <article class="office">
+                <h2>OFFICE INFO</h2>
+                <p class="communications">Public Communications Office</p>
+                <p>NASA Headquarters</p>
+                <p>300 E. Street SW, Suite 5R30</p>
+                <p>Washington, DC 20546</p>
+                <p>(202) 358-0001 (Office)</p>
+                <p>(202) 358-4338 (Fax)</p>
+            </article>
+            <article class="form">
+                <h2>CONTACT US</h2>
+                <form action="./nasa.html">
+                    Name:<br>
+                    <input type="text" name="fullname"  class="name"><br>
+                    Message:<br>
+                    <textarea name="message" rows="10" cols="27" class="msg">
+                    </textarea><br>
+                    <button type="button" onclick="alert('Information Sent')">Send</button>
+                 </form>
+            </article>
+        </section>
 </body>
 </html>
