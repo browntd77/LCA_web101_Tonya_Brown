@@ -25,7 +25,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     background-color: gainsboro;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 article {
@@ -39,7 +39,7 @@ article {
 }
 
 h2{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .name{
